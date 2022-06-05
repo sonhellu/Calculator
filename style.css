@@ -2,13 +2,22 @@
     background: #b3b8ce;
 }
 
+.mainContainer {
+    position: relative;
+    height: 100vh;
+}
 .container {
     max-width: 350px;
     margin: 0 auto;
+    width: 100%;
     border: 1px solid white;
     border-radius: 30px;
     padding: 25px 3px 30px 3px;
     background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 #display {
@@ -46,7 +55,7 @@
         -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
     background: linear-gradient(130deg, rgba(68, 67, 67, 0.24), rgba(255, 255, 255, 0.847));
     border-radius: 25px;
-    border: 3px solid rgb(236, 234, 234);
+    border: 3px solid rgb(231, 229, 229);
 }
 
 .left {
