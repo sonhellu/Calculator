@@ -1,0 +1,79 @@
+* {
+    background: #b3b8ce;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 25px 3px 30px 3px;
+    background: white;
+}
+
+#display {
+    margin-right: 13px;
+    font-size: 35px;
+    background: white;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+}
+
+#detailDisplay {
+    margin-right: 13px;
+    font-size: 20px;
+    color: #999;
+    background: white;
+    text-align: right;
+    height: 15px;
+}
+
+.btns {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn,
+.equal {
+    cursor: pointer;
+    margin: 8px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+        -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(130deg, rgba(68, 67, 67, 0.24), rgba(255, 255, 255, 0.847));
+    border-radius: 25px;
+    border: 3px solid rgb(236, 234, 234);
+}
+
+.left {
+    background: linear-gradient(155deg, rgb(197 75 5), rgb(223 128 35 / 65%));
+    color: white;
+    border: 3px solid rgb(207, 140, 102);
+}
+
+.btn:hover {
+  transform: translateY(0.05em);
+}
+
+@media only screen and (max-width: 425px) {
+
+    .btn,
+    .equal {
+        margin: 5px;
+        line-height: 55px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    #display {
+        font-size: 25px;
+        height: 45px;
+    }
+    #detailDisplay {
+        font-size: 15px;
+        height: 5px;
+    }
+}
